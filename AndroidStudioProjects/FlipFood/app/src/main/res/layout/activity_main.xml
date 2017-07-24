@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context="com.example.sandesh.flipfood.MainActivity">
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="30dp"
+        android:background="#DDffffff"
+        android:gravity="center"
+        android:padding="30dp">
+
+        <TableLayout>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:fontFamily="sans-serif"
+                    android:text="WELCOME"
+                    android:textAlignment="center"
+                    android:textSize="18dp"
+                    android:textStyle="bold" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="5dp">
+
+                <TextView
+                    android:textColor="#a0a0a0"
+                    android:layout_width="match_parent"
+                    android:text="  Where should we deliver your order?"
+                    android:textAlignment="center" />
+            </TableRow>
+
+            <TableRow android:layout_margin="10dp">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#c0c0c0" />
+
+            </TableRow>
+            <TableRow>
+                <LinearLayout
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:layout_margin="10dp"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/marker"/>
+
+                    <LinearLayout
+                        android:layout_margin="10dp"
+                        android:orientation="vertical"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textStyle="bold"
+                            android:text="CURRENT LOCATION"/>
+
+                        <TextView android:id="@+id/currentLocation"
+                            android:onClick="getLocation"
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+                            android:textColor="#909090"
+                            android:text="Select your current location">
+                        </TextView>
+                    </LinearLayout>
+                </LinearLayout>
+            </TableRow>
+            <TableRow>
+                <LinearLayout
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:layout_margin="10dp"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/marker"/>
+
+                    <LinearLayout
+                        android:layout_margin="10dp"
+                        android:orientation="vertical"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textStyle="bold"
+                            android:text="CHOOSE FROM MAP"/>
+
+                        <TextView android:id="@+id/chooseMap"
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+                            android:textColor="#909090"
+                            android:text="Pinpoint from map location">
+                        </TextView>
+                    </LinearLayout>
+                </LinearLayout>
+            </TableRow>
+            <TableRow android:layout_margin="10dp">
+                <Button
+                    android:layout_width="match_parent"
+                    android:background="#c0392b"
+                    android:textColor="#ffffff"
+                    android:text="CONTINUE"/>
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:text="          I will decide later" android:layout_gravity="center"/>
+            </TableRow>
+        </TableLayout>
+
+    </TableRow>
+</TableLayout>
