@@ -2,6 +2,7 @@ package com.example.sandesh.flipfood;
 
 import android.Manifest;
 import android.content.Context;
+import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.location.Address;
 import android.location.Criteria;
@@ -63,5 +64,9 @@ public class MainActivity extends AppCompatActivity {
 
         }
         myTextView.setText(String.valueOf(latitude));
+    }
+    public void nextPage(View view){
+        Intent intent = new Intent(this, displayhub.class);
+        startActivity(intent);
     }
 }

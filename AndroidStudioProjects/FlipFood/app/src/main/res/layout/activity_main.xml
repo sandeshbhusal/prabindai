@@ -113,6 +113,7 @@
             </TableRow>
             <TableRow android:layout_margin="10dp">
                 <Button
+                    android:onClick="nextPage"
                     android:layout_width="match_parent"
                     android:background="#c0392b"
                     android:textColor="#ffffff"
@@ -120,6 +121,7 @@
             </TableRow>
             <TableRow>
                 <TextView
+                    android:onClick="nextPage"
                     android:text="          I will decide later" android:layout_gravity="center"/>
             </TableRow>
         </TableLayout>

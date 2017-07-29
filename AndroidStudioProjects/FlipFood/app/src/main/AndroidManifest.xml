@@ -3,6 +3,7 @@
     package="com.example.sandesh.flipfood">
 
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -11,6 +12,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -18,6 +20,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".displayhub"
+            android:label="@string/title_activity_displayhub"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
 </manifest>
